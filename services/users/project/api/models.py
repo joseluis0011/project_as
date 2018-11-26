@@ -13,7 +13,6 @@ class User(db.Model):
     active = db.Column(db.Boolean(), default=True, nullable=False)
     created_date = db.Column(db.DateTime, default=func.now(), nullable=False)
 
-
     def to_json(self):
         return {
             'id': self.id,
