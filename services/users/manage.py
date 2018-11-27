@@ -5,8 +5,8 @@ import unittest
 import coverage
 from flask.cli import FlaskGroup
 
-from project import create_app, db   # <-- nuevo
-from project.api.models import User  # <-- nuevo
+from project import create_app, db
+from project.api.models import User
 
 # configurando informes de covertura con coverage 4.5.1
 COV = coverage.coverage(
