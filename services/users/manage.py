@@ -19,8 +19,8 @@ COV = coverage.coverage(
 )
 COV.start()
 
-app = create_app()  # <-- nuevo
-cli = FlaskGroup(create_app=create_app)  # <-- nuevo
+app = create_app()
+cli = FlaskGroup(create_app=create_app)
 
 
 @cli.command()
